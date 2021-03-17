@@ -1,0 +1,40 @@
+import time
+
+true = ["T", "t", "True"]
+false = ["F", "f", "False"]
+correct = 0
+
+name = input("what's your name?")
+
+print("OK, " +  name +",let's get started.")
+time.sleep(2)
+
+print("Paris is a person.")
+choice = input(">>> ")
+if choice in false:
+    correct += 1
+else:
+    correct += 0
+
+print("Thanos die in the lost movie.")
+choice = input(">>> ")
+if choice in true:
+    correct += 1
+else:
+    correct += 0
+
+print("Bla.")
+choice = input(">>> ")
+if choice in true:
+    correct += 1
+else:
+    correct += 0
+
+print("Bla.")
+choice = input(">>> ")
+if choice in false:
+    correct += 1
+else:
+    correct += 0
+
+print("You finishes, " + name + ". You got", correct, "out of 4 correct.")
